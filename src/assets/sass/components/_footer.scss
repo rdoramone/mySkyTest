@@ -1,0 +1,323 @@
+footer {
+  .container-social-media {
+    align-items: center;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.15);
+    border-top: 1px solid rgba(80, 80, 80, 0.15);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    .social-media {
+      a {
+        display: inline-block;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        width: 4rem;
+
+        i {
+          font-family: 'sky-icon';
+          font-size: 1.7rem;
+        }
+
+        &:hover,
+          &:focus {
+            color: #DB524F;
+            outline: none;
+          }
+      }
+    }
+  }
+
+  .container-footer-main-links {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  
+    .content-app-sky {
+      margin-top: 2rem;
+
+      .app-link {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 400px;
+        width: 100%;
+
+        &:focus {
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 12px;
+          outline: none;
+        }
+  
+        .logo-app {
+          height: 4.8rem;
+          margin-right: 1.5rem;
+          width: 4.8rem;
+        }
+
+        p {
+          color: #DB524F;
+          font-family: 'RobotoBold';
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .links-store-app {
+      display: none;
+    }
+
+    .content-main-links {
+      margin-top: 0.8rem;
+
+      .main-links-group {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(80, 80, 80, 0.15);
+        }
+
+        .btn-link-group {
+          align-items: center;
+          display: flex;
+          color: rgba(0, 0, 0, 0.38);
+          font-size: 1.6rem;
+          font-weight: bold;
+          height: 4.8rem;
+          justify-content: space-between;
+          outline: none;
+          padding: 1.6rem 0;
+          position: relative;
+          text-align: left;
+          width: 100%;
+          z-index: 1;
+
+          i {
+            font-family: 'sky-icon';
+            font-size: 1.6rem;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &.active {
+            i {
+              transform: rotate(-180deg);
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+
+        .content-link {
+          max-height: 0;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+          position: relative;
+          
+          ul {
+            margin-bottom: 1rem;
+
+            li {
+              color: rgba(0, 0, 0, 0.6);
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 3rem;
+            }
+          }
+
+          &.active {
+            max-height: 300px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  .general-links {
+    font-family: 'RobotoMedium';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.4rem;;
+    padding: 2.2rem 1.5rem;
+    text-align: center;
+    
+    a {
+      margin-left: 0.7rem;
+      margin-right: 0.7rem;
+
+      &:hover,
+      &:focus {
+        color: #DB524F;
+        outline: none;
+      }
+    }
+  }
+
+  .footer-main-links {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    padding: 2.2rem 1.5rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  footer {
+    .container-social-media {
+      padding-left: 5rem;
+      padding-right: 5rem;
+  
+      .social-media {
+        a {  
+          i {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .container-footer-main-links {
+      display: flex;
+      flex-flow: row nowrap;
+      padding-bottom: 4rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+      .content-app-sky {
+        margin-top: 3rem;
+        width: 50%;
+
+        .app-link {
+
+          p {
+            color: rgba(0, 0, 0, 0.6);
+            max-width: 290px;
+          }
+        }
+      }
+
+      .links-store-app {
+        display: block;
+        margin-left: 5.3rem;
+
+        a {
+          display: inline-block;
+          height: 52px;
+          margin: 1rem;
+        }
+
+        .link-app-store {
+          background: url('../../assets/img/button-apple-store-light-default.svg') no-repeat center center;
+          width: 160px;
+
+          &:hover,
+          &:focus {
+            background: url('../../assets/img/button-apple-store-dark-over.svg') no-repeat center center;
+            outline: none;
+          }
+        }
+
+        .link-google-play {
+          background: url('../../assets/img/button-google-play-light-default.svg') no-repeat center center;
+          width: 157px;
+
+          &:hover,
+          &:focus {
+            background: url('../../assets/img/button-google-play-dark-over.svg') no-repeat center center;
+            outline: none;
+          }
+        }
+      }
+
+      .content-main-links {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 1.8rem;
+        width: 50%;
+  
+        .main-links-group {
+          flex: 1 1 50%;
+
+          &:not(:last-child) {
+            border-bottom: none;
+          }
+  
+          .btn-link-group {
+            font-weight: bold;
+  
+            i {
+              display: none;
+            }
+          }
+  
+          .content-link {
+            max-height: none;
+            opacity: 1;
+            transition: none;
+
+            &.active {
+              max-height: none;
+              opacity: 1;
+              transition: none;
+            }
+  
+            ul {
+              li {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .general-links {
+      line-height: 2.3rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      text-align: left;
+    }
+  
+    .footer-main-links {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  
+    .copyright {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  footer {
+    .container-social-media {
+      padding-left: 16.5rem;
+      padding-right: 16.5rem;
+    }
+  
+    .container-footer-main-links {
+      padding-bottom: 4.5rem;
+      padding-left: 16.5rem;
+      padding-right: 16.5rem;
+    }
+  
+    .general-links {
+      padding-left: 16.5rem;
+      padding-right: 16.5rem;
+    }
+  
+    .footer-main-links {
+      padding-left: 16.5rem;
+      padding-right: 16.5rem;
+    }
+  
+    .copyright {
+      padding-left: 16.5rem;
+      padding-right: 16.5rem;
+    }
+  }
+}

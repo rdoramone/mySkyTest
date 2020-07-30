@@ -1,0 +1,172 @@
+header {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  
+  .main-header {
+    display: flex;
+    height: 6.4rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 100%;
+  
+    .accessibility-options {
+      display: none;
+    }
+  
+    .general-options {
+      display: none;
+    }
+  }
+  
+  .nav-header {
+    align-items: center;
+    border-top: 2px solid #d5d5dc;
+    box-shadow: 0rem 1.2rem 2rem #ccc;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 4.8rem;
+    text-align: center;
+    width: 100%;
+    
+    a {
+      border-bottom: 5px solid transparent;
+      flex: 1 1 auto;
+      font-family: 'RobotoBold', sans-serif;
+      font-size: 1.6rem;
+      line-height: 4.3rem;
+  
+      &.active {
+        border-bottom: 5px solid #DB524F;
+      }
+    
+      &.active,
+      &:hover,
+      &:focus {
+        color: #DB524F;
+        outline: none;
+      }
+    }
+  }
+  
+  .menu {
+    height: 3.3rem;
+    width: 3.3rem;
+  
+    i {
+      font-family: 'sky-icon';
+      font-size: 3.3rem;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    .main-header {
+      padding-left: 4.8rem;
+      padding-right: 8rem;
+      justify-content: initial;
+  
+      .accessibility-options {
+        display: flex;
+        flex-grow: 1;
+        margin-left: 4.5rem;
+  
+        button {
+          i {
+            font-family: 'sky-icon';
+            font-size: 1.7rem;
+          }
+          
+          &:not(:last-child) {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 1.5rem;
+            margin-right: 1.5rem;
+          }
+  
+          &:last-child {
+            margin-left: 5rem;
+          }
+        }
+  
+        .btn-play {
+          font-family: 'RobotoBold', sans-serif;
+          font-size: 1.6rem;
+          padding-left: 2.8rem;
+          position: relative;
+  
+          .icon-play {
+            font-size: 2.2rem;
+            position: absolute;
+            left: 0;
+          }
+  
+          &:hover,
+          &:focus {
+            color: #DB524F;
+            outline: none;
+  
+            i {
+              color: #DB524F;
+            }
+          }
+        }
+      }
+    
+      .general-options {
+        display: flex;
+  
+        button {
+          font-family: 'RobotoBold', sans-serif;
+          font-size: 1.6rem;
+  
+          i {
+            font-family: 'sky-icon';
+            font-size: 1.7rem;
+          }
+  
+          &:hover,
+          &:focus {
+            color: #DB524F;
+            outline: none;
+  
+            i {
+              color: #DB524F;
+            }
+          }
+        }
+  
+        .btn-user {
+          margin-right: 1.2rem;
+          padding-left: 3rem;
+          position: relative;
+  
+          .icon-person {
+            font-size: 2.2rem;
+            position: absolute;
+            left: 0;
+          }
+        }
+  
+        .btn-search {
+          .icon-search {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  
+    .menu {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  header {
+    .main-header {
+      width: 80%;
+    }
+  }
+}

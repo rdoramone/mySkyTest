@@ -1,0 +1,17 @@
+// Base
+@import
+	'base/reset',
+	'base/base',
+	'base/fonts',
+	'base/icons',
+	'base/theme';
+
+// Components
+@import
+	'components/carousel',
+	'components/header',
+	'components/footer';
+
+	@import
+		'libs/slick',
+		'libs/slick-theme';

@@ -1,0 +1,186 @@
+.theme {
+  &_default {
+    .bg {
+      background-color: #f1f2fa;
+    }
+
+    .bg-default {
+      background-color: #fff;
+    }
+
+    .text {
+      &_primary {
+        color: rgba(0, 0, 0, 0.87);
+      }
+    
+      &_secondary {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .btn-circle {
+      background-color: #fff;
+      color: rgba(0, 0, 0, 0.38);
+
+      &:hover,
+      &:focus {
+        background-color: #e3e3eb;
+        outline: none;
+      }
+    }
+
+    footer {
+      .container-social-media {
+        .logo-sky-footer {
+          background: url('../../assets/img/sky-light-default.svg') no-repeat center center;
+          height: 32px;
+          width: 84px;
+        }
+      }
+    }
+
+    &_dark {
+      .bg {
+        background-color: #32383a;
+      }
+
+      .bg-default {
+        background-color: #242a2c;
+      }
+    
+      .text {
+        &_primary {
+          color: #fff;
+        }
+      
+        &_secondary {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .btn-circle {
+        background-color: #242a2c;
+  
+        &:hover,
+        &:focus {
+          background-color: #3d4545;
+          outline: none;
+        }
+      }
+
+      header {
+        .nav-header {
+          box-shadow: none;
+        }
+      }
+
+      footer {
+        .container-social-media {
+          border-bottom: 1px solid rgba(238, 238, 238, 0.15);
+
+          .logo-sky-footer {
+            background: url('../../assets/img/sky-dark-default.svg') no-repeat center center;
+            height: 32px;
+            width: 84px;
+          }
+        }
+
+        .container-footer-main-links {
+          .links-store-app {
+            .link-app-store {
+              background: url('../../assets/img/button-apple-store-dark-default.svg') no-repeat center center;
+              width: 160px;
+    
+              &:hover,
+              &:focus {
+                background: url('../../assets/img/button-apple-store-dark-over.svg') no-repeat center center;
+                outline: none;
+              }
+            }
+    
+            .link-google-play {
+              background: url('../../assets/img/button-google-play-dark-default.svg') no-repeat center center;
+              width: 157px;
+    
+              &:hover,
+              &:focus {
+                background: url('../../assets/img/button-google-play-dark-over.svg') no-repeat center center;
+                outline: none;
+              }
+            }
+          }
+
+          .content-app-sky {
+            .app-link {
+              p {
+                color: rgba(255, 255, 255, 0.7);
+              }
+            }
+          }
+
+          .content-main-links {    
+            .main-links-group {
+              .btn-link-group {
+                color: rgba(255, 255, 255, 0.5);
+
+                &:not(:last-child) {
+                  border-bottom: 1px solid rgba(238, 238, 238, 0.15);
+                }
+              }
+            }
+          }
+        }
+
+        .general-links {
+          color:#fff;
+        }
+      }
+
+      a {
+        &.text {
+          &_secondary {
+            &:hover,
+            &:focus {
+              color: #DB524F;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      &.text {
+        &_secondary {
+          &:hover,
+          &:focus {
+            color: #DB524F;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .theme {
+    &_default {  
+      &_dark {
+        footer {
+          .container-footer-main-links {  
+            .content-main-links {    
+              .main-links-group {
+                .btn-link-group {
+                  &:not(:last-child) {
+                    border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

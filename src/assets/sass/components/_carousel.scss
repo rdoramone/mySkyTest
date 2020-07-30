@@ -1,0 +1,234 @@
+.carousel-group {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+
+  #highlight {
+    .carousel-highlight {
+      .item-carousel {
+        height: 162px;
+        position: relative;
+        width: 290px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        
+        a {
+          display: block;
+          border-radius: 5px;
+  
+          img {
+            height: 162px;
+            width: 290px;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-category-group {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    .category {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 2.2rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    .carousel {
+      .slick-prev,
+      .slick-next {
+          background-color: #43494B;
+          height: 64px;
+          width: 64px;
+      }
+
+      .slick-prev {
+          left: -32px;
+
+          [dir="rtl"] & {
+              right: -32px;
+          }
+          &:before {
+              content: "\6d";
+              margin-right: -28px;
+
+              [dir="rtl"] & {
+                  content: "\6c";
+              }
+          }
+      }
+
+      .slick-next {
+          right: -32px;
+
+          [dir="rtl"] & {
+              left: -25px;
+          }
+
+          &:before {
+              content: "\6c";
+              margin-left: -28px;
+
+              [dir="rtl"] & {
+                  content: "\6d";
+              }
+          }
+      }
+
+      .item-carousel {
+        height: 168px;
+        position: relative;
+        width: 112px;
+        
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+        
+        a {
+          display: block;
+          border-radius: 5px;
+  
+          img {
+            height: 168px;
+            width: 112px;
+          }
+    
+          i {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+            font-family: 'sky-icon';
+            font-size: 1.2rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            right: 8px;
+            position: absolute;
+            text-align: center;
+            top: 8px;
+            width: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .carousel-group {
+    #highlight {
+      .carousel-highlight {
+        .item-carousel {
+          height: 290px;
+          width: 514px;
+          
+          a {    
+            img {
+              height: 260px;
+              margin: 15px 27px;
+              width: 460px;
+            }
+          }
+
+          &.slick-center {
+            a {
+              transform: scale(1.105);
+              transition: transform 0.7s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-category-group {
+      .category {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+      }
+
+      .carousel {
+        .item-carousel {
+          height: 210px;
+          width: 140px;
+          
+          a {    
+            img {
+              height: 210px;
+              width: 140px;
+            }
+      
+            i {
+              font-size: 1.5rem;
+              height: 3rem;
+              line-height: 3rem;
+              right: 3px;
+              top: 3px;
+              width: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .carousel-group {
+    #highlight {
+      .carousel-highlight {
+        .item-carousel {
+          height: 451px;
+          width: 800px;
+          
+          a {
+
+            img {
+              height: 410px;
+              margin: 20px 36px;
+              width: 730px;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-category-group {
+      .category {
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+ 
+      .carousel {
+        .item-carousel {
+          height: 300px;
+          width: 200px;
+
+          &:not(:last-child) {
+            margin-right: 15px;
+        }
+          
+          a {    
+            img {
+              height: 300px;
+              width: 200px;
+            }
+      
+            i {
+              font-size: 2rem;
+              height: 4.5rem;
+              line-height: 4.5rem;
+              right: 3px;
+              top: 3px;
+              width: 4.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

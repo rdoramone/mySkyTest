@@ -1,0 +1,20 @@
+{
+  "name": "mySkyProject",
+  "version": "1.0.0",
+  "description": "Teste de Front-End para avaliação de conhecimento.",
+  "main": "gulpfile.esm.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": "Ricardo Jesus<ricardo.da.c.jesus@accenture.com>",
+  "license": "ISC"
+}
